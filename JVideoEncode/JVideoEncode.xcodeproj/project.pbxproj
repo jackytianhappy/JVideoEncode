@@ -13,6 +13,8 @@
 		8557688A1E97365700D3785E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 855768881E97365700D3785E /* Main.storyboard */; };
 		8557688C1E97365700D3785E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8557688B1E97365700D3785E /* Assets.xcassets */; };
 		8557688F1E97365700D3785E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8557688D1E97365700D3785E /* LaunchScreen.storyboard */; };
+		855768991E9744C100D3785E /* H264JEncoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 855768981E9744C100D3785E /* H264JEncoder.m */; };
+		8562F81B1E98D1B1007A662E /* JVideoConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 8562F81A1E98D1B1007A662E /* JVideoConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,10 @@
 		8557688B1E97365700D3785E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8557688E1E97365700D3785E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		855768901E97365700D3785E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		855768971E9744C100D3785E /* H264JEncoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264JEncoder.h; sourceTree = "<group>"; };
+		855768981E9744C100D3785E /* H264JEncoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264JEncoder.m; sourceTree = "<group>"; };
+		8562F8191E98D1B1007A662E /* JVideoConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JVideoConfig.h; sourceTree = "<group>"; };
+		8562F81A1E98D1B1007A662E /* JVideoConfig.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JVideoConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +64,7 @@
 		8557687E1E97365700D3785E /* JVideoEncode */ = {
 			isa = PBXGroup;
 			children = (
+				8562F8181E98D17D007A662E /* JVideoConfigs */,
 				855768961E9743AF00D3785E /* Encode */,
 				855768821E97365700D3785E /* AppDelegate.h */,
 				855768831E97365700D3785E /* AppDelegate.m */,
@@ -83,8 +90,19 @@
 		855768961E9743AF00D3785E /* Encode */ = {
 			isa = PBXGroup;
 			children = (
+				855768971E9744C100D3785E /* H264JEncoder.h */,
+				855768981E9744C100D3785E /* H264JEncoder.m */,
 			);
 			name = Encode;
+			sourceTree = "<group>";
+		};
+		8562F8181E98D17D007A662E /* JVideoConfigs */ = {
+			isa = PBXGroup;
+			children = (
+				8562F8191E98D1B1007A662E /* JVideoConfig.h */,
+				8562F81A1E98D1B1007A662E /* JVideoConfig.m */,
+			);
+			name = JVideoConfigs;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -162,6 +180,8 @@
 				855768871E97365700D3785E /* ViewController.m in Sources */,
 				855768841E97365700D3785E /* AppDelegate.m in Sources */,
 				855768811E97365700D3785E /* main.m in Sources */,
+				855768991E9744C100D3785E /* H264JEncoder.m in Sources */,
+				8562F81B1E98D1B1007A662E /* JVideoConfig.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -322,6 +342,7 @@
 				855768951E97365700D3785E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
