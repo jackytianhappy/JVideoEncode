@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		850961001E9A1FFF00798A65 /* H264JDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 850960FF1E9A1FFF00798A65 /* H264JDecoder.m */; };
 		855768811E97365700D3785E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 855768801E97365700D3785E /* main.m */; };
 		855768841E97365700D3785E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 855768831E97365700D3785E /* AppDelegate.m */; };
 		855768871E97365700D3785E /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 855768861E97365700D3785E /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		850960FE1E9A1FFF00798A65 /* H264JDecoder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = H264JDecoder.h; sourceTree = "<group>"; };
+		850960FF1E9A1FFF00798A65 /* H264JDecoder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = H264JDecoder.m; sourceTree = "<group>"; };
 		8557687C1E97365700D3785E /* JVideoEncode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JVideoEncode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		855768801E97365700D3785E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		855768821E97365700D3785E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -45,6 +48,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		850960FD1E9A1FE200798A65 /* Decode */ = {
+			isa = PBXGroup;
+			children = (
+				850960FE1E9A1FFF00798A65 /* H264JDecoder.h */,
+				850960FF1E9A1FFF00798A65 /* H264JDecoder.m */,
+			);
+			name = Decode;
+			sourceTree = "<group>";
+		};
 		855768731E97365700D3785E = {
 			isa = PBXGroup;
 			children = (
@@ -64,6 +76,7 @@
 		8557687E1E97365700D3785E /* JVideoEncode */ = {
 			isa = PBXGroup;
 			children = (
+				850960FD1E9A1FE200798A65 /* Decode */,
 				8562F8181E98D17D007A662E /* JVideoConfigs */,
 				855768961E9743AF00D3785E /* Encode */,
 				855768821E97365700D3785E /* AppDelegate.h */,
@@ -180,6 +193,7 @@
 				855768871E97365700D3785E /* ViewController.m in Sources */,
 				855768841E97365700D3785E /* AppDelegate.m in Sources */,
 				855768811E97365700D3785E /* main.m in Sources */,
+				850961001E9A1FFF00798A65 /* H264JDecoder.m in Sources */,
 				855768991E9744C100D3785E /* H264JEncoder.m in Sources */,
 				8562F81B1E98D1B1007A662E /* JVideoConfig.m in Sources */,
 			);
